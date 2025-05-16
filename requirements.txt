@@ -4,6 +4,4 @@ langchain-groq
 langchain-community
 validators
 youtube-transcript-api
-re
 PyPDF2
-unicodedata
