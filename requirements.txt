@@ -1,9 +1,9 @@
 streamlit
 langchain
-langchain_groq
-langchain_community
+langchain-groq
+langchain-community
 validators
-youtube_transcript_api
+youtube-transcript-api
 re
 PyPDF2
 unicodedata
