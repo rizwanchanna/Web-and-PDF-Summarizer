@@ -5,3 +5,4 @@ langchain-community
 validators
 youtube-transcript-api
 PyPDF2
+unstructured
