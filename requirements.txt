@@ -1,0 +1,9 @@
+streamlit
+langchain
+langchain_groq
+langchain_community
+validators
+youtube_transcript_api
+re
+PyPDF2
+unicodedata
