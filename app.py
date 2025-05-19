@@ -152,7 +152,7 @@ if section == "🔗 Link Summary":
                         loader = UnstructuredURLLoader(
                             urls=[generic_url],
                             ssl_verify=False,
-                            headers={"User-Agent": "Mozilla/5.0"}
+                            headers={"User-Agent": "Mozilla/5.0  Chrome/116.0.0.0"}
                         )
                         docs = loader.load()
 
