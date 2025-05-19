@@ -47,8 +47,18 @@ st.markdown("<h1 style='text-align: center;'>🧠 Groq Smart Summarizer</h1>", u
 
 # Prompt Template
 prompt_template = """
-Provide a summary of the following content in 300 words:
-Content:{text}
+You are an expert AI assistant designed to generate professional, concise summaries of long-form content.
+Your task is to carefully read the following content and provide a detailed yet concise summary in no more than 300 words. The summary should preserve the original meaning, include the key points and important insights, and be written in fluent, natural English. Do not copy verbatim sentences from the input.
+
+If the content is a YouTube transcript, structure your summary to reflect the main topics discussed throughout the video. If the content is a written article or document, identify and summarize the thesis, main arguments, and conclusions.
+
+Content: {text}
+
+Output Format:
+- Write in paragraph form
+- Avoid repetition or filler phrases
+- Maintain logical flow and clarity
+- Use neutral and objective tone
 """
 prompt = PromptTemplate(template=prompt_template, input_variables=["text"])
 
