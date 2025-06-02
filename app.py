@@ -111,7 +111,7 @@ def summary_translation(summary_text, groq_api_key):
             if st.button("🌐 Translate Summary"):
                 with st.spinner("🔄 Translating..."):
                     try:
-                        llm = ChatGroq(model="llama3-70b-8192", groq_api_key=groq_api_key)
+                        llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
                         translation_prompt = f"Translate the following summary into {target_lang}:\n\n{st.session_state['summary']}"
                         translated_raw = llm.invoke(translation_prompt).content
                         translated_clean = unicodedata.normalize("NFKC", str(translated_raw))
@@ -153,7 +153,7 @@ if section == "🔗 Link Summary":
         else:
             try:
                 with st.spinner("⏳ Summarizing..."):
-                    llm = ChatGroq(model="llama3-70b-8192", groq_api_key=groq_api_key)
+                    llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
 
                     if "youtube.com/watch" in generic_url or "youtu.be/" in generic_url:
                         transcript = get_youtube_transcript_text(generic_url)
@@ -208,7 +208,7 @@ elif section == "📄 PDF/Text Summary":
         else:
             try:
                 with st.spinner("⏳ Reading and summarizing..."):
-                    llm = ChatGroq(model="llama3-70b-8192", groq_api_key=groq_api_key)
+                    llm = ChatGroq(model="llama-3.3-70b-versatile", groq_api_key=groq_api_key)
                     text = extract_text_from_file(uploaded_file)
                     docs = [Document(page_content=text)]
                     chain = load_summarize_chain(llm, chain_type="stuff", prompt=prompt)
