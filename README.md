@@ -1,6 +1,6 @@
 # 🧠 Groq Smart Summarizer
 
-**Groq Smart Summarizer** is a powerful and intuitive web app built with [Streamlit](https://streamlit.io/) that lets you summarize YouTube videos, web articles, PDF documents, and plain text files using the blazing-fast **LLaMA3 (70B)** model served through the **Groq API**.
+**Groq Smart Summarizer** is a powerful and intuitive web app built with [Streamlit](https://streamlit.io/) that lets you summarize YouTube videos, web articles, PDF documents, and plain text files using the blazing-fast **llama-3.3-70b-versatile** model served through the **Groq API**.
 
 Whether you're a student, researcher, or content creator, this tool saves you time by delivering clear, concise summaries — with the option to translate them into multiple languages.
 
